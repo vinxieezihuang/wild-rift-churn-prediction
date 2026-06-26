@@ -44,7 +44,6 @@ LightGBM was selected as the preferred model because it offered:
 ## Repository Contents
 - `wild-rift-churn-prediction-report.pdf` — full project report
 - `README.md` — project summary
-- figure files — optional supporting visuals
 
 ## Notes
 This is a project-based analysis built around an academic dataset and deployment design assumptions. Business impact estimates are directional and depend on production data quality, retention intervention design, and live deployment conditions.
