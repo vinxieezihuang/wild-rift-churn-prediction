@@ -1,4 +1,4 @@
-# Wild Rift Player Churn Prediction
+# WR Churn Risk Prediction Using a Synthetic Mobile MOBA Dataset
 
 ## Overview
 This project evaluates a churn prediction approach for Wild Rift with a focus on Southeast Asian markets, where cold-start behavior, uneven telemetry quality, and regional diversity make prediction more difficult.
