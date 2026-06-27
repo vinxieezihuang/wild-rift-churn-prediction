@@ -1,49 +1,30 @@
-# WR Churn Risk Prediction Using a Synthetic Mobile MOBA Dataset
+# Wild Rift Churn Prediction
 
-## Overview
-This project evaluates a churn prediction approach for Wild Rift with a focus on Southeast Asian markets, where cold-start behavior, uneven telemetry quality, and regional diversity make prediction more difficult.
+This project demonstrates a churn-risk modeling workflow using a synthetic dataset designed to approximate player lifecycle patterns in a fast-paced mobile MOBA environment.
 
-The analysis compares three machine learning frameworks:
-- Random Forest
-- XGBoost
-- LightGBM
+The analysis focuses on early retention risk prediction and compares Random Forest, XGBoost, and LightGBM on a Wild Rift-inspired synthetic behavioral dataset. The project is intended for portfolio demonstration only and does not reproduce internal production logic.
 
-The final recommendation is LightGBM, based on its balance of recall, training speed, and deployment practicality.
+## Project Overview
 
-## Problem
-Player churn is a major challenge in mobile gaming because many users disengage within their first few sessions. In this context, missing a true churner is often more costly than generating a moderate number of false alarms. The project therefore prioritizes recall, robustness to sparse early-session data, and operational scalability.
+Player disengagement is a major challenge in live-service games, especially during the early lifecycle. In mobile MOBAs, short match loops, progression pacing, social play, and frustration signals can all influence whether players remain active or begin dropping off.
 
-## What This Project Covers
-- model comparison for churn prediction
-- evaluation of recall, AUC, and practical deployment trade-offs
-- cold-start and data-quality challenges
-- fairness and explainability considerations
-- deployment design using SHAP, Looker, and Google Cloud Storage
+This repository shows an end-to-end tabular machine learning workflow for churn-risk analysis, including:
+- synthetic data generation from seed gaming behavior data
+- preprocessing for numeric and categorical features
+- model comparison with cross-validation
+- final evaluation with classification metrics and confusion matrix
+- churn-risk pattern visualization
+- SHAP-based feature interpretation
 
-## Final Recommendation
-LightGBM was selected as the preferred model because it offered:
-- the strongest recall
-- fast training and inference performance
-- better suitability for sparse early-session data
-- a practical path to explainability through SHAP
+## Repository Structure
 
-## Tools and Skills
-- Python
-- LightGBM
-- XGBoost
-- Random Forest
-- SHAP
-- Machine Learning
-- Churn Prediction
-- Model Evaluation
-- Feature Engineering
-- Data Analysis
-- Looker
-- Google Cloud Storage
-
-## Repository Contents
-- `wild-rift-churn-prediction-report.pdf` — full project report
-- `README.md` — project summary
-
-## Notes
-This is a project-based analysis built around an academic dataset and deployment design assumptions. Business impact estimates are directional and depend on production data quality, retention intervention design, and live deployment conditions.
+```text
+wild-rift-churn-prediction/
+├─ README.md
+├─ requirements.txt
+├─ data/
+│  └─ synthetic_wr_dataset.csv
+├─ notebooks/
+│  └─ wr_churn_prediction.ipynb
+└─ scripts/
+   └─ generate_synthetic_wr_dataset.py
