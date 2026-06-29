@@ -26,5 +26,16 @@ wild-rift-churn-prediction/
 │  └─ synthetic_wr_dataset.csv
 ├─ notebooks/
 │  └─ wr_churn_prediction.ipynb
-└─ scripts/
-   └─ generate_synthetic_wr_dataset.py
+├─ scripts/
+│  └─ generate_synthetic_wr_dataset.py
+├─ images/
+│  ├─ figure_1_class_balance.png
+│  ├─ figure_2_matches_last_7d.png
+│  ├─ figure_3_last_login_gap.png
+│  ├─ figure_4_region_risk.png
+│  ├─ figure_5_model_comparison.png
+│  ├─ figure_6_confusion_matrix.png
+│  ├─ figure_7_match_volume_risk.png
+│  └─ figure_8_feature_importance.png
+└─ reports/
+   └─ wild-rift-churn-prediction-report.pdf
